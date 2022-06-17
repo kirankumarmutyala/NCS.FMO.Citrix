@@ -1,0 +1,64 @@
+https://docs.citrix.com/en-us/citrix-virtual-apps-desktops/upgrade-migrate/upgrade.html
+
+https://docs.citrix.com/en-us/storefront/1912-ltsr/install-standard.html
+
+https://www.citrix.com/en-au/downloads/citrix-virtual-apps-and-desktops/
+
+downtime required for delivery controller if we do individual components
+
+store from servers will take time 2 hours
+
+weekly base each component upgrade is better
+
+We need to keep the VDA in maintenenace mode
+
+--------------------------------------------------
+
+1. Store front upgrade
+
+We need to perform propagate changes on weekly once to store fornt servers. whenever we perform any changes on setore front its bee
+
+to make propagate changes
+
+take a snapshot
+
+Remove the server in server group on storefront console
+
+will perform upgrade individually
+
+close the srore front console on 2 stores
+
+https://docs.citrix.com/en-us/storefront/1912-ltsr/install-standard.html
+
+mount the iso image and >>> ISO Image link>> https://www.citrix.com/en-sg/downloads/citrix-virtual-apps-and-desktops/product-software/citrix-virtual-apps-and-desktops-1912ltsr-cu5-all-editions.html
+
+---------------------------------------------------------------------
+
+2 Delivery controller upgrade
+
+1st test site in Citrix studio >> Test site to check any errors reported.
+--Take a snapshot of Delivery Controllers and then backup of Database.
+-- Close Studio console on all controllers
+-- Proceed to upgrade the first delivery controller 
+-- Mount the ISO image and select Delivery controller upgrade.
+-- Open Studio console on First controller and then selct Automatic site upgrade. Site upgrade process will start.
+-- After the site upgrade, goto second controller and upgrade the delivery controller.
+
+2.5 : Studio upgrade in Management server (SGCTRXPRDMGMT) manually once the DC upgrade site completed
+-----------------------------------------------------------------
+
+3. Director upgrade
+
+-------------------------------------
+
+4. VDA upgrade
+
+------------------------------------
+
+
+
+
+
+
+
+
